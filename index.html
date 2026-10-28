@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
 <meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Prototype">
 <title>Prototype_2 — рекомендованные задания</title>
 <style>
 :root{color-scheme:dark;--bg:#000;--fg:#e8e8ea;--muted:#8a8f99;--accent:#f5d33a}
@@ -39,6 +43,8 @@ html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);overflow:hid
 #fs p{margin:0;color:var(--muted);font-size:13px;max-width:34ch;line-height:1.45;min-height:1em}
 #fs button:focus-visible{outline:3px solid #fff;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.notify.show{transition:none}}
+/* без отступов под вырез: прототип занимает всю доступную область (и в Safari, и при запуске с экрана «Домой») */
+:root{padding:0}#viewport{padding:0}
 </style>
 </head>
 <body>
